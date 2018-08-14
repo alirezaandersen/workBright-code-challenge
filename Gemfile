@@ -40,6 +40,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-awesome_print'
   gem 'pry-bloodline'
+
+  gem "rest-client", "~> 2.0"
 end
 
 group :development do
