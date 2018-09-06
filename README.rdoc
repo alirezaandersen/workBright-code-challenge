@@ -1,28 +1,45 @@
-== README
+## Boulder Tubing Guide
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+During the summer, people go tubing down Boulder Creek. To be fun, it has to be just right: enough water flowing, hot enough, and mostly sunny.
 
-Things you may want to cover:
+![](https://www.colorado.edu/orientation/sites/default/files/styles/medium/public/article-image/25007726_222b58046b_b.jpg?itok=V-bZRlpo)
 
-* Ruby version
+**Objective:** Build an application that lets the user know if it's a good day to go tubing. Implement it however you'd like using. Preferably Ruby on Rails for the backend/API, but beyond that whatever stack you feel is appropriate.
 
-* System dependencies
+The goal is to demonstrate general competency, and comfort developing an open-ended application. Take about an hour. Since that's not much time, it's fine to describe unfinished parts with what you'd have liked to do.
 
-* Configuration
+Use this API endpoint for information on tubing conditions:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+GET https://boulder-tubing-api.herokuapp.com/conditions
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Returns application/json:
+{
+  "temperature_f":"44",
+  "weather_condition":"Cloudy",
+  "flow_rate_cfs":58.0
+}
+```
+
+
+To be a good day for tubing, these conditions must be met:
+
+**Temperature:** > 85 F
+
+**River Flow Rate:** between 40 CF/S and 300 CF/S
+
+**Weather Conditions**: One of the following:
+
+```
+windy
+cloudy
+mostly cloudy
+partly cloudy
+clear
+sunny
+fair
+hot
+```
+
+See [Yahoo Documentation](https://developer.yahoo.com/weather/documentation.html) for a complete list of condition codes.
