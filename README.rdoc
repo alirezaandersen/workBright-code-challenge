@@ -2,8 +2,6 @@
 
 During the summer, people go tubing down Boulder Creek. To be fun, it has to be just right: enough water flowing, hot enough, and mostly sunny.
 
-![](https://www.colorado.edu/orientation/sites/default/files/styles/medium/public/article-image/25007726_222b58046b_b.jpg?itok=V-bZRlpo)
-
 **Objective:** Build an application that lets the user know if it's a good day to go tubing. Implement it however you'd like using. Preferably Ruby on Rails for the backend/API, but beyond that whatever stack you feel is appropriate.
 
 The goal is to demonstrate general competency, and comfort developing an open-ended application. Take about an hour. Since that's not much time, it's fine to describe unfinished parts with what you'd have liked to do.
